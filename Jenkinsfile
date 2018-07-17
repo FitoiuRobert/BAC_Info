@@ -3,7 +3,10 @@ pipeline{
   stages{
     stage('build'){
       steps{
-        sh 'git --version'
+        sh '''
+          echo $(git --version) > git_version.txt
+          cat git_version.txt
+        '''
       }
     }
   }
