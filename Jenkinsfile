@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('build'){
       steps{
-        sh 'gcc .s/trtok_test/main.c'
+        sh 'cat ./strtok_test/main.c'
       }
     }
   }
