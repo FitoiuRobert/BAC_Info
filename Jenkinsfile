@@ -6,6 +6,7 @@ pipeline{
         sh '''
           echo $(git --version) > git_version.txt
           cat git_version.txt
+          prepare to fail
         '''
       }
     }
